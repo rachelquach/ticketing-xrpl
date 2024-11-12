@@ -1,3 +1,5 @@
+**Ticketing Platform on XRPL**
+
 Inspiration:
 This project was inspired by my sister's experience when her Ticketmaster account got hacked, and her VIP tickets to see Seventeen were stolen. I initially wanted to work on introducing price caps on ticket resales, but as many companies are already considering integrating blockchain into their ticketing systems, I wanted to find another use case that would focus more on building fan loyalty and fostering more engaged interactions between fans an artists. 
 
