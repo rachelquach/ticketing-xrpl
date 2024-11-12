@@ -1,0 +1,72 @@
+<html>
+
+<head>
+  <title>Account</title>
+  <link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+  <link rel="stylesheet" href="styles.css">
+  <script src='https://unpkg.com/xrpl@2.6.0'></script>
+  <script>
+    if (typeof module !== "undefined") {
+      const xrpl = require('xrpl')
+    }
+  </script>
+</head>
+
+<body>
+
+  <div id="standbyApp">
+
+    <button type="button" onClick="getAccount('standby')">
+      Create Account
+    </button>
+
+    <h2>Account Info</h2>
+
+    <div class="appField">Account<br />
+      <div id="standbyAccountField" class="appValue"></div>
+    </div>
+    <div class="appField">Public Key<br />
+      <div id="standbyPubKeyField" class="appValue"></div>
+    </div>
+    <div class="appField">Private Key<br />
+      <div id="standbyPrivKeyField" class="appValue"></div>
+    </div>
+    <div class="appField"> Seed<br />
+      <div id="standbySeedField" class="appValue"></div>
+    </div>
+    <div class="appField"> XRP Balance<br />
+      <div id="standbyBalanceField" class="appValue"></div>
+    </div>
+
+    <div id="standbyTransact">
+      <h3>Make Buy Offer</h3>
+
+      <div class="appField">Amount<br />
+        <input id="standbyAmountField" class="appValue"></input>
+      </div>
+      <div class="appField">NFT Token ID<br />
+        <input id="standbyTokenIDField" class="appValue"></input>
+      </div>
+      
+      <button type="button" onClick="makeBuyOffer()">Send Buy Offer</button>
+
+    </div>
+    
+    <p>Transaction Log</p>
+    <div id="standbyResultField"></div>
+
+  </div>
+
+  <div id="Artist">
+
+    <h2>Artist Info</h2>
+    <h3>Concert in LA, 10/25!</h3>
+    
+
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
